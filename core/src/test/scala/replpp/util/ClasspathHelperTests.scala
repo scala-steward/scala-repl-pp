@@ -28,7 +28,7 @@ class ClasspathHelperTests extends AnyWordSpec with Matchers {
     "declared in config" in {
       val deps = ClasspathHelper.dependencyArtifacts(Config(dependencies = Seq(
         "org.scala-lang:scala-library:2.13.10",
-        "org.scala-lang::scala3-library:3.3.0",
+        "org.scala-lang::scala3-library:3.3.1",
       )))
       deps.size shouldBe 2
 
